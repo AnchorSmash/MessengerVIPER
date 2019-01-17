@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Kmv-pp-UTJ" customClass="ChatsTableViewCell" customModule="MessengerVIPER" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="Kmv-pp-UTJ" id="TiZ-Hl-7u2">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SHx-2s-Aif" userLabel="Avatar Image View">
+                        <rect key="frame" x="16" y="11.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="0CR-pj-YOM"/>
+                            <constraint firstAttribute="height" constant="40" id="aCB-Rx-9fu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1S4-nJ-pE0" userLabel="Last Message Text Label">
+                        <rect key="frame" x="64" y="31.5" width="240" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ey5-zz-1CB" userLabel="User Name Label">
+                        <rect key="frame" x="64" y="11.5" width="205.5" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FrC-5F-nrJ" userLabel="Last Message Date Label">
+                        <rect key="frame" x="277.5" y="13" width="26.5" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="SHx-2s-Aif" secondAttribute="bottom" constant="11" id="0M2-zi-BfH"/>
+                    <constraint firstItem="FrC-5F-nrJ" firstAttribute="trailing" secondItem="1S4-nJ-pE0" secondAttribute="trailing" id="6jP-P2-3Ig"/>
+                    <constraint firstItem="FrC-5F-nrJ" firstAttribute="centerY" secondItem="Ey5-zz-1CB" secondAttribute="centerY" id="F79-U2-HUI"/>
+                    <constraint firstItem="1S4-nJ-pE0" firstAttribute="leading" secondItem="Ey5-zz-1CB" secondAttribute="leading" id="NJj-Ha-7Zf"/>
+                    <constraint firstItem="1S4-nJ-pE0" firstAttribute="bottom" secondItem="SHx-2s-Aif" secondAttribute="bottom" id="PdI-z9-cCz"/>
+                    <constraint firstItem="FrC-5F-nrJ" firstAttribute="leading" secondItem="Ey5-zz-1CB" secondAttribute="trailing" constant="8" id="ZFx-Zd-XKk"/>
+                    <constraint firstItem="SHx-2s-Aif" firstAttribute="leading" secondItem="TiZ-Hl-7u2" secondAttribute="leading" constant="16" id="cwC-DQ-Gqn"/>
+                    <constraint firstAttribute="trailing" secondItem="1S4-nJ-pE0" secondAttribute="trailing" constant="16" id="ept-7F-VR9"/>
+                    <constraint firstItem="SHx-2s-Aif" firstAttribute="top" secondItem="TiZ-Hl-7u2" secondAttribute="top" constant="11" id="glq-LW-BKv"/>
+                    <constraint firstItem="Ey5-zz-1CB" firstAttribute="top" secondItem="SHx-2s-Aif" secondAttribute="top" id="iEr-iN-gzd"/>
+                    <constraint firstItem="Ey5-zz-1CB" firstAttribute="leading" secondItem="SHx-2s-Aif" secondAttribute="trailing" constant="8" id="wnk-rb-RvH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="B2y-kr-kGq"/>
+            <connections>
+                <outlet property="avatarImageView" destination="SHx-2s-Aif" id="NuD-b0-Zf1"/>
+                <outlet property="lastMessageDateLabel" destination="FrC-5F-nrJ" id="0hb-cy-MTJ"/>
+                <outlet property="lastMessageTextLabel" destination="1S4-nJ-pE0" id="Bgy-O2-UhC"/>
+                <outlet property="userNammeLabel" destination="Ey5-zz-1CB" id="w6H-af-I6s"/>
+            </connections>
+            <point key="canvasLocation" x="-219.19999999999999" y="45.877061469265371"/>
+        </tableViewCell>
+    </objects>
+</document>
