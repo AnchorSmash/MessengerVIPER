@@ -69,7 +69,7 @@ extension ChatsViewController: UITableViewDataSource {
 
 extension ChatsViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "goToChat", sender: self)
+        performSegue(withIdentifier: "ChatSegue", sender: self)
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
@@ -77,7 +77,7 @@ extension ChatsViewController: UITableViewDelegate {
 extension ChatsViewController{
 
 override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-    if segue.identifier == "goToChat" {
+    if segue.identifier == "ChatSegue" {
         guard let rowIndex = tableView.indexPathForSelectedRow?.row else {
             return
         }

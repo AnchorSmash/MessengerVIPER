@@ -235,7 +235,7 @@
 		77DDACB121EFCE0C00F26B95 /* Chats */ = {
 			isa = PBXGroup;
 			children = (
-				77E395CF21F0B77400683783 /* СhatsAssembly */,
+				77E395CF21F0B77400683783 /* Assembly */,
 				77DDACB621EFCE7400F26B95 /* View */,
 				77DDACB521EFCE5900F26B95 /* Interactor */,
 				77DDACB421EFCE4D00F26B95 /* Presenter */,
@@ -334,12 +334,12 @@
 			path = Assembly;
 			sourceTree = "<group>";
 		};
-		77E395CF21F0B77400683783 /* СhatsAssembly */ = {
+		77E395CF21F0B77400683783 /* Assembly */ = {
 			isa = PBXGroup;
 			children = (
 				77E395D021F0B78F00683783 /* ChatsAssembly.swift */,
 			);
-			path = "СhatsAssembly";
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
